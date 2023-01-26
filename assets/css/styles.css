@@ -1,0 +1,1118 @@
+@font-face {
+    font-family: IRANSansX;
+    font-style: normal;
+    font-weight: 100;
+    src: url("../fonts/iranSans/woff/IRANSansX-Thin.woff") format("woff"),
+    url("../fonts/iranSans/woff2/IRANSansX-Thin.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: IRANSansX;
+    font-style: normal;
+    font-weight: 200;
+    src: url("../fonts/iranSans/woff/IRANSansX-UltraLight.woff") format("woff"),
+    url("../fonts/iranSans/woff2/IRANSansX-UltraLight.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: IRANSansX;
+    font-style: normal;
+    font-weight: 300;
+    src: url("../fonts/iranSans/woff/IRANSansX-Light.woff") format("woff"),
+    url("../fonts/iranSans/woff2/IRANSansX-Light.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: IRANSansX;
+    font-style: normal;
+    font-weight: 500;
+    src: url("../fonts/iranSans/woff/IRANSansX-Medium.woff") format("woff"),
+    url("../fonts/iranSans/woff2/IRANSansX-Medium.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: IRANSansX;
+    font-style: normal;
+    font-weight: 600;
+    src: url("../fonts/iranSans/woff/IRANSansX-DemiBold.woff") format("woff"),
+    url("../fonts/iranSans/woff2/IRANSansX-DemiBold.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: IRANSansX;
+    font-style: normal;
+    font-weight: 800;
+    src: url("../fonts/iranSans/woff/IRANSansX-ExtraBold.woff") format("woff"),
+    url("../fonts/iranSans/woff2/IRANSansX-ExtraBold.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: IRANSansX;
+    font-style: normal;
+    font-weight: 900;
+    src: url("../fonts/iranSans/woff/IRANSansX-Black.woff") format("woff"),
+    url("../fonts/iranSans/woff2/IRANSansX-Black.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: IRANSansX;
+    font-style: normal;
+    font-weight: bold;
+    src: url("../fonts/iranSans/woff/IRANSansX-Bold.woff") format("woff"),
+    url("../fonts/iranSans/woff2/IRANSansX-Bold.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: IRANSansX;
+    font-style: normal;
+    font-weight: normal;
+    src: url("../fonts/iranSans/woff/IRANSansX-Regular.woff") format("woff"),
+    url("../fonts/iranSans/woff2/IRANSansX-Regular.woff2") format("woff2");
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "IRANSansX";
+    -moz-font-feature-settings: "ss02";
+    -webkit-font-feature-settings: "ss02";
+    font-feature-settings: "ss02";
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    direction: rtl;
+    font-family: "IRANSansX";
+    -moz-font-feature-settings: "ss02";
+    -webkit-font-feature-settings: "ss02";
+    font-feature-settings: "ss02";
+}
+
+.box-effect {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.box-effect-1 {
+    width: 300px;
+    margin: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 20px;
+    /*overflow: hidden;*/
+    padding: 10px;
+    position: relative;
+    background-color: #fff;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.box-effect-1 a {
+    text-decoration: none;
+}
+
+.box-effect-1 a p {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    text-decoration: none;
+    margin-top: 10px;
+    color: black;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.box-effect-1:hover a p {
+    color: #0b5ed7;
+}
+
+.box-effect-1 a span {
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    margin-top: 10px;
+    color: black;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.box-effect-1::after {
+    display: block;
+    content: '';
+    position: absolute;
+    right: 0;
+    border-radius: 20px;
+    width: 100%;
+    top: 0;
+    z-index: -1;
+    height: 100%;
+    background-color: #fff;
+    box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
+    transform: rotate(0deg);
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.box-effect-1::before {
+    display: block;
+    content: '';
+    position: absolute;
+    right: 0;
+    border-radius: 20px;
+    width: 100%;
+    top: 0;
+    z-index: -1;
+    height: 100%;
+    background-color: #fff;
+    box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
+    transform: rotate(0deg);
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.box-effect-1:hover::after {
+    transform: rotate(5deg);
+
+}
+
+.box-effect-1:hover::before {
+    transform: rotate(10deg);
+
+}
+
+.box-effect-1 img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+
+.box-effect-2 {
+    width: 300px;
+    height: 400px;
+    margin: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 20px;
+    overflow: hidden;
+    /*padding: 10px;*/
+    position: relative;
+    background-color: #fff;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.box-effect-2 img {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+    position: absolute;
+
+}
+
+.box-effect-2 .box-overflow {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.6);
+    animation: fadeIn;
+    animation-duration: .4s;
+    opacity: 0;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.box-effect-2 .box-overflow p {
+    color: #fff;
+}
+
+.box-effect-2:hover .box-overflow {
+    opacity: 1;
+
+}
+
+.box-effect-3 {
+    width: 300px;
+    height: 400px;
+    margin: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 20px;
+    overflow: hidden;
+    /*padding: 10px;*/
+    position: relative;
+    background-color: #fff;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.box-effect-3 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.box-effect-3:hover img {
+    transform: rotate(20deg) scale(150%);
+}
+
+.box-effect-3::before {
+    display: block;
+    content: '';
+    position: absolute;
+    right: 0;
+    /*border-radius: 20px;*/
+    width: 100%;
+    background: rgb(199, 128, 14, 0.5);
+    top: 0;
+    z-index: 1;
+    height: 50%;
+    /*background-color: #fff;*/
+    /*box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;*/
+    left: 0;
+    transform-origin: 100% 0;
+    transform: rotateZ(90deg);
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+
+}
+
+.box-effect-3::after {
+    display: block;
+    content: '';
+    position: absolute;
+    left: 0;
+    /* border-radius: 20px; */
+    width: 100%;
+    background: rgb(199, 128, 14, 0.5);
+    bottom: 0;
+    z-index: 1;
+    height: 50%;
+    transform-origin: 100% 100%;
+    transform: rotateZ(-90deg);
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.box-effect-3:hover::before, .box-effect-3:hover::after {
+    transform: rotateZ(0);
+}
+
+.box-effect-3 .animate-links {
+    position: absolute;
+    z-index: 99;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    bottom: 40px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    transform: scale(0);
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.box-effect-3:hover .animate-links {
+    transform: scale(1);
+
+}
+
+.box-effect-3 ul.icons-item {
+    list-style-type: none;
+    position: absolute;
+    top: -100px;
+    right: 0;
+    padding: 10px 10px;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #FFBC00;
+    width: 50px;
+    height: 100px;
+    border-radius: 0 0 0 10px;
+
+    transition: all 0.3s ease 0.3s;
+}
+
+.box-effect-3:hover ul.icons-item {
+    top: 0;
+}
+
+.box-effect-3 ul.icons-item li {
+    padding: 10px;
+    margin: 2px 0;
+}
+
+.box-effect-3 ul.icons-item li a {
+    color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.box-effect-3 ul.icons-item li:hover a {
+    background-color: #fff;
+    color: #000;
+}
+
+
+.box-effect-4 {
+    width: 400px;
+    height: 400px;
+    margin: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 20px;
+    overflow: hidden;
+    /*padding: 10px;*/
+    position: relative;
+    background-color: #fff;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.box-effect-4 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    -webkit-transform: translateY(-50%) translateX(-50%);
+    -o-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.box-effect-4 .info {
+    position: absolute;
+    top: 20px;
+    padding: 10px;
+    z-index: 99;
+    transform: scale(0);
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+
+}
+
+.box-effect-4:hover .info {
+    transform: scale(1);
+}
+
+.box-effect-4 .info a {
+    text-decoration: none;
+    color: #fff;
+
+}
+
+.box-effect-4 .info p {
+    font-size: 12px;
+    color: #fff;
+    line-height: 2;
+    text-align: justify;
+}
+
+.box-effect-4:hover .overlay {
+    opacity: 1;
+
+    z-index: 1;
+    background: rgba(00, 0, 0, 0.5);
+}
+
+.box-effect-4::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 9;
+    background: rgba(00, 0, 0, 0.6);
+    left: 0;
+    bottom: 0;
+    right: 60%;
+    transform: skew(20deg) translateX(-75%);
+    transition: 0.5s all !important;
+}
+
+.box-effect-4:hover::after {
+    right: 0;
+}
+
+.box-effect-5 {
+    width: 450px;
+    min-height: 400px;
+    margin: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 20px;
+    overflow: hidden;
+    /*padding: 10px;*/
+    position: relative;
+    background-color: #fff;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.box-effect-5 img {
+    width: 100%;
+}
+
+.box-effect-5 .information {
+    padding: 20px;
+    background-color: #fff;
+    position: relative;
+    z-index: 9999;
+}
+
+.box-effect-5 .information a {
+    text-decoration: none;
+}
+
+
+.box-effect-5 .information a p.title-information {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 19px;
+    color: #000000;
+}
+
+.box-effect-5 .information p {
+    color: #474747;
+}
+
+.box-effect-5 .more-meta {
+    padding: 20px;
+    position: relative;
+    z-index: 999;
+    background: #fff;
+}
+
+.box-effect-5 .more-meta .total {
+    margin: 0 5px;
+}
+
+.box-effect-5 .more-meta .redmore-item a {
+    text-decoration: none;
+    color: #000000;
+    background: #00000017;
+    padding: 10px;
+    border-radius: 10px;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.box-effect-5 .more-meta .redmore-item {
+    position: absolute;
+    left: 20px;
+    bottom: -40px;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+
+.box-effect-5:hover .more-meta .redmore-item {
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+}
+
+
+.box-effect-5 .more-meta .redmore-item a i {
+    border-radius: 30px;
+    background-color: #FFBC00;
+    color: #fff;
+    padding: 5px;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.box-effect-5 .more-meta .redmore-item a:hover i {
+    background-color: #fff;
+    color: #FFBC00;
+}
+
+.box-effect-5 .more-meta .redmore-item a:hover {
+    background-color: #FFBC00;
+    color: #fff;
+}
+
+.box-effect-5 .overlay {
+    width: 0px;
+    height: 0px;
+    background-color: #FFBC005C;
+    opacity: 1;
+    position: absolute;
+    top: 130px;
+    border-radius: 50%;
+}
+
+.box-effect-5:hover .overlay {
+    width: 800px;
+    height: 800px;
+}
+
+.box-effect-6 {
+    width: 900px;
+    height: 400px;
+    margin: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 20px;
+    overflow: hidden;
+    /*padding: 10px;*/
+    /*position: relative;*/
+    background-color: #fff;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.box-effect-6 a img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.box-effect-6 a {
+    position: relative;
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+
+.box-effect-6 a::before {
+    content: '';
+    transition: 0.3s;
+    border-right: 1px solid #fff;
+    border-left: 1px solid #fff;
+    position: absolute;
+    pointer-events: none;
+    z-index: 1;
+    right: 15px;
+    left: 15px;
+    bottom: 15px;
+    top: 15px;
+    transform: scaleY(0);
+    border-radius: 10px;
+
+}
+
+.box-effect-6 a:hover::before {
+    transform: scaleY(1);
+}
+
+.box-effect-6 a::after {
+    content: '';
+    transition: 0.3s;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    position: absolute;
+    pointer-events: none;
+    z-index: 1;
+    right: 15px;
+    left: 15px;
+    bottom: 15px;
+    top: 15px;
+    transform: scaleY(0);
+    border-radius: 10px;
+}
+
+.box-effect-6 a:hover::after {
+    transform: scaleX(1);
+}
+
+.box-effect-7 {
+    width: 300px;
+    min-height: 400px;
+    margin: 20px;
+    /*border-radius: 20px;*/
+    overflow: hidden;
+    /*padding: 10px;*/
+    position: relative;
+    /*background-color: #fff;*/
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.box-effect-7 .product {
+    padding: 0 10px;
+}
+
+.box-effect-7 .box-product-hover-img {
+    width: 100%;
+    position: relative;
+    box-shadow: 0 10px 20px 0 rgb(0 0 0 / 25%);
+    border: 10px solid #fff;
+    /*padding: 10px;*/
+    /*border-radius: 10px;*/
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.box-effect-7:hover .box-product-hover-img {
+    border: 10px solid #293897;
+    /*border-radius: 10px;*/
+
+}
+
+.box-effect-7 .box-product-hover-img img {
+    width: 100%;
+    /*position: absolute;*/
+    /*border-radius: 10px;*/
+}
+
+.box-effect-7 .box-product-hover-img .overlay-product {
+    opacity: 0;
+    /*border-radius: 10px;*/
+    background-color: rgba(255, 255, 255, .75);
+    position: absolute;
+    z-index: 99;
+    width: 100%;
+    top: 0;
+    right: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    -webkit-transition-property: all;
+    transition-property: all;
+    -webkit-transition-duration: .7s;
+    transition-duration: .7s;
+}
+
+.box-effect-7:hover .box-product-hover-img .overlay-product {
+    opacity: 1;
+}
+
+.box-effect-7 .box-product-hover-img .overlay-product i.fas {
+    color: #293896;
+    font-size: 23.33px;
+}
+
+.box-effect-7 .box-product-hover-img .overlay-product span {
+    color: #293896;
+    font-size: 13.61px;
+}
+
+.box-effect-7 .box-product-hover-img .overlay-product .hover-show-offer {
+    width: 118px;
+    height: 35px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    background-color: #293897;
+    color: #fff;
+    font-size: 19px;
+}
+
+.box-effect-7 .product .details-product-box {
+    margin-top: 10px;
+    position: relative;
+}
+
+.box-effect-7 .product a {
+    text-decoration: none;
+}
+
+.box-effect-7 .product .details-product-box p.title {
+    color: #4c4c4c;
+    font-size: 17.5px;
+    padding-left: 60px;
+    font-weight: 700;
+    line-height: 26.24px;
+    margin-bottom: 15px;
+}
+
+.box-effect-7 .product .details-product-box .prod__detail--price {
+    font-size: 19.43px;
+    font-weight: 700;
+    color: #293897;
+    margin-top: 5px;
+}
+
+.box-effect-7 .product .details-product-box .prod__detail--price span {
+    font-size: 15.55px;
+}
+
+.box-effect-7 .product .details-product-box .prod__detail--price .prod__detail--offer {
+    font-size: 15.55px;
+    font-weight: 300;
+    color: #bfbfbf;
+    margin-right: 35px;
+}
+
+.box-effect-7 .product .details-product-box .ticket-offer {
+    left: 10px;
+    top: -15px;
+    position: absolute;
+
+    transform-origin: top center !important;
+}
+
+.box-effect-7 .product .details-product-box .ticket-offer > span {
+    color: #000;
+    transform: rotate(-90deg);
+    display: block;
+    white-space: nowrap;
+    position: absolute;
+    left: 4px;
+    top: 35px;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.box-effect-7 .product .details-product-box .ticket-offer > span > strong {
+    font-size: 15.5px;
+}
+
+.box-effect-7 .product:hover .details-product-box .ticket-offer {
+    animation: spin 1.5s linear infinite;
+    transform: rotate(100deg);
+}
+
+
+@keyframes spin {
+    0% {
+        transform: rotate(0)
+    }
+    25% {
+        transform: rotate(-10deg)
+    }
+    50% {
+        transform: rotate(0)
+    }
+    75% {
+        transform: rotate(10deg)
+    }
+    100% {
+        transform: rotate(0)
+    }
+}
+
+
+.box-effect-8 {
+    background-color: transparent;
+    width: 500px;
+    height: 300px;
+    /*border: 1px solid #f1f1f1;*/
+    perspective: 1000px;
+    margin-top: 30px;
+    padding: 10px;
+}
+
+.flip-box-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.box-effect-8:hover .flip-box-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-box-front, .flip-box-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.flip-box-front {
+    background-color: #bbb;
+    color: black;
+}
+
+.flip-box-back {
+    background-color: dodgerblue;
+    color: white;
+    transform: rotateY(180deg);
+}
+
+.flip-box-back a {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.flip-box-back a:hover {
+    background-color: #e3e3e3;
+
+}
+
+
+.box-effect-9 {
+    background-color: transparent;
+    width: 500px;
+    height: 300px;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px;
+}
+
+.box-effect-9 .flip-box-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.box-effect-9:hover .flip-box-inner {
+    transform: rotateX(180deg);
+}
+
+.box-effect-9 .flip-box-front, .flip-box-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.box-effect-9 .flip-box-front {
+    background-color: #bbb;
+    color: black;
+}
+
+.box-effect-9 .flip-box-back {
+    background-color: dodgerblue;
+    color: white;
+    transform: rotateX(180deg);
+}
+
+.box-effect-10 {
+    width: 300px;
+    min-height: 400px;
+    margin: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 20px;
+    overflow: hidden;
+    padding: 10px;
+    /*position: relative;*/
+    background-color: #fff;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.box-effect-10 .box-thumbnail-product {
+    width: 100%;
+    position: relative;
+    height: 250px;
+}
+
+.box-effect-10 .box-thumbnail-product img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.box-effect-10 .box-thumbnail-product .box-overlay-product {
+    position: absolute;
+    z-index: 99;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(0);
+    background-color: rgba(0, 73, 255, 0.5);
+    border-radius: 20px;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.box-effect-10:hover .box-thumbnail-product .box-overlay-product {
+    transform: scale(1);
+
+}
+
+.box-effect-10 .box-thumbnail-product .box-overlay-product a {
+    margin: 5px;
+    display: block;
+    padding: 0;
+    border-radius: 50%;
+}
+
+.box-effect-10 .box-thumbnail-product .box-overlay-product a i.fa {
+    color: #000;
+    text-decoration: none;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 50%;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.box-effect-10 .box-thumbnail-product .box-overlay-product a i.fa:hover {
+    background-color: #e3e3e3;
+}
+
+.box-effect-10 .title-product {
+    text-align: center;
+    margin: 0;
+    margin-top: 10px;
+    font-weight: 700;
+}
+
+.box-effect-10 a {
+    text-decoration: none;
+    color: #000000;
+    display: block;
+}
+
+.box-effect-10 .price {
+    text-align: center;
+    display: flex;
+    justify-content: start;
+    margin-top: 20px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box-effect-10 a.go-to-product {
+    text-align: center;
+    margin-top: 10px;
+    background-color: green;
+    padding: 10px;
+    border-radius: 10px;
+    color: #fff;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.box-effect-10 a.go-to-product:hover {
+    background-color: #075d07;
+}
+
+
+
+
+
+
+
+
+
+
+
